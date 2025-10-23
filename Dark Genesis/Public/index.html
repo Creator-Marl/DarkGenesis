@@ -1,0 +1,126 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark-Genesis le jeu à avoir dès maintenant</title>
+  <link rel="stylesheet" href="STYLE_TEST.css">
+</head>
+<body>
+  <section>
+    <h1>Dark - Genesis</h1>
+  </section>
+
+  <section>
+    <div class="window window1">
+      <div class="title-bar">
+        <div class="controls">
+          <button class="minimize" aria-label="Réduire">-</button>
+          <button class="maximize" aria-label="Maximiser">□</button>
+          <button class="close" aria-label="Fermer">X</button>
+        </div>
+      </div>
+      <div class="content">
+        <p>Ton futur jeu addictif favori</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="window window2">
+      <div class="title-bar">
+        <div class="controls">
+          <button class="minimize" aria-label="Réduire">-</button>
+          <button class="maximize" aria-label="Maximiser">□</button>
+          <button class="close" aria-label="Fermer">X</button>
+        </div>
+      </div>
+      <div class="content">
+        <p>Viens jouer avec tes amis, faire de nouvelles rencontres ou simplement t'éclater en tuant des boss</p>
+      </div>
+    </div>
+    <h2>RENCONTRE  COMBAT  VICTOIRE  LEVEL UP  ENCORE  ET ENCORE</h2>
+  </section>
+
+  <section>
+    <div class="window window3">
+      <div class="title-bar">
+        <div class="controls">
+          <button class="minimize" aria-label="Réduire">-</button>
+          <button class="maximize" aria-label="Maximiser">□</button>
+          <button class="close" aria-label="Fermer">X</button>
+        </div>
+      </div>
+      <div class="content">
+        <p>Viens t'amuser et explorer toutes les possibilités d'offre</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="window window4">
+      <div class="title-bar">
+        <div class="controls">
+          <button class="minimize" aria-label="Réduire">-</button>
+          <button class="maximize" aria-label="Maximiser">□</button>
+          <button class="close" aria-label="Fermer">X</button>
+        </div>
+      </div>
+      <div class="content">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'Tab1')">Inscription</button>
+                <button class="tab-link" onclick="openTab(event, 'Tab2')">Connection</button>
+            </div>
+
+        <div id="Tab1" class="tab-content" style="display: block;">
+            <div class="signup-form">
+                    <form action="/submit" method="post">
+                      
+                        <div class="form-group">
+                            <label for="username">Nom d'utilisateur</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirmer le mot de passe</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn-submit">S'inscrire</button>
+                    </form>
+                    <p class="login-link">Déjà membre ? <a href="#" onclick="openTab(event, 'Tab2')">Connecte-toi</a></p>
+                </div>
+            </div>
+
+            <div id="Tab2" class="tab-content" style="display:none">
+                    <form action="/submit" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Se connecter</button>
+                    </form>
+                </div>
+            </div>
+      </div>
+    </div>
+  </section>
+    <script src="SCRIPT_TEST.js"></script>
+    <footer>
+        <p>&copy; 2025 Dark-Genesis Site Web. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
