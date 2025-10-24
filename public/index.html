@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -75,7 +74,7 @@
                 <button class="tab-link" onclick="openTab(event, 'Tab2')">Connection</button>
             </div>
 
-        <div id="Tab1" class="tab-content" style="display: block;">
+      <div id="Tab1" class="tab-content visible">
             <div class="signup-form">
                     <form action="/submit" method="post">
                       
@@ -101,7 +100,8 @@
                 </div>
             </div>
 
-            <div id="Tab2" class="tab-content" style="display:none">
+                  <div id="Tab2" class="tab-content visible">
+
                     <form action="/submit" method="post">
                         <div class="form-group">
                             <label for="email">Email</label>
